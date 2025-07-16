@@ -1,0 +1,22 @@
+
+
+.feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.img-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.feature h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+.feature-tx{
+    margin-left: 40px;
+}
