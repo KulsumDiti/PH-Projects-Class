@@ -4,7 +4,7 @@
  * 1. keyword like var , let , const
  * 2. variable name 
  * 3. equal sign (=)
- * 4. man 
+ * 4. man / value / Data  
  * 5. Semi-colon (;)
 */
 var weight = 88;

@@ -1,3 +1,8 @@
+
+              /******************************
+                Variable name declear rules
+             ******************************/ 
+
 // 1. no keyword in variable name
 var false = 45;
 var var = 50;

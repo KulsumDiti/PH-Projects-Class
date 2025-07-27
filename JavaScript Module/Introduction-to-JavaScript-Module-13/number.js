@@ -1,7 +1,7 @@
 var orangePrice = 20;
 var chocolate = 0.5;
-// var applePrice = parseInt('22.5');
-var applePrice = parseFloat('22.5');
+// var applePrice = parseInt('98');
+var applePrice = parseFloat('92.5');
 
 // console.log(orangePrice);
 // console.log(applePrice);
