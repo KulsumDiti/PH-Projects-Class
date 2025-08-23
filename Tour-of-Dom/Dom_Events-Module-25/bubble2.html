@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Event</title>
+  </head>
+  <body>
+    <!-- section#sec>ul#list-container>li#list-$*6>button{Button-$} -->
+    <section id="sec">
+      <ul id="list-container">
+        <li id="list-1"><button>Button-1</button></li>
+        <li id="list-2"><button>Button-2</button></li>
+        <li id="list-3"><button>Button-3</button></li>
+        <li id="list-4"><button>Button-4</button></li>
+        <li id="list-5"><button>Button-5</button></li>
+        <li id="list-6"><button>Button-6</button></li>
+      </ul>
+    </section>
+    <script>
+      document
+        .getElementById("list-container")
+        .addEventListener("click", () => {
+          console.log("Button Click");
+        });
+
+      document.getElementById("sec").addEventListener("click", () => {
+        console.log("Section Click");
+      });
+
+      document.getElementById("list-6").addEventListener("click", (event) => {
+        console.log("Button-6 Click");
+        event.stopImmediatePropagation();
+      });
+    </script>
+  </body>
+</html>
