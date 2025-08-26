@@ -4,8 +4,8 @@ function getElement(id) {
   const element = document.getElementById(id);
   return element;
 }
-
-//Event-delegation:
+//Way-1
+//Event-delegation:(Best Way for dom event handeling )
 
 getElement("product-box").addEventListener("click", function (e) {
   if (e.target.className.includes("cart-btn")) {
@@ -50,7 +50,7 @@ getElement("product-box").addEventListener("click", function (e) {
   }
 });
 
-//traverse technique of Dom:
+//traverse technique of Dom: (way-2)
 /*
 const cartbtns = document.getElementsByClassName("cart-btn");
 console.log(cartbtns);
@@ -104,7 +104,7 @@ document.getElementById("btn-clear").addEventListener("click", function () {
   getElement("total-price").innerText = 0;
 });
 
-// traditional way of Dom-Event:
+// traditional way of Dom-Event:(way-3)
 
 /*
 document.getElementById("cart-btn-1").addEventListener("click", function () {
