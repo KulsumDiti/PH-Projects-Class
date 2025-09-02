@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handel</title>
+  </head>
+  <body>
+    <!-- Tittle-Section -->
+    <h1 id="Tittle">Event Handler</h1>
+    <button id="Tittle-btn">Update Tittle</button>
+
+    <!-- Login-Section -->
+    <p id="login-text">No User</p>
+    <button id="login-btn">Login</button>
+
+    <!-- Input-Section -->
+    <h2 id="input-text">No Name</h2>
+    <input type="text" name="" id="input" placeholder="your name" />
+    <button id="input-btn">Update</button>
+
+    <script>
+      //<!-- Tittle-Section -->
+
+      document.getElementById("Tittle-btn").addEventListener("click", () => {
+        const updateTitle = document.getElementById("Tittle");
+        updateTitle.innerText = "Updated Page Title.";
+      });
+
+      //<!-- Login-Section -->
+      document
+        .getElementById("login-btn")
+        .addEventListener("click", function () {
+          const loginText = document.querySelector("#login-text");
+          loginText.textContent = "User logged In successfully";
+        });
+      //<!-- Input-Section -->
+      document
+        .getElementById("input-btn")
+        .addEventListener("click", function () {
+          const inputName = document.querySelector("#input").value;
+          const inputUpdate = document.querySelector("#input-text");
+          console.log(inputName);
+          inputUpdate.innerText = inputName;
+        });
+    </script>
+  </body>
+</html>

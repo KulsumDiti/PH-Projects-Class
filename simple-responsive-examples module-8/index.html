@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+        .banner{
+            height: 400px;
+            display: flex;
+            gap: 5px;
+            margin-bottom: 5px;
+        }
+        .banner > div{
+            flex: 1;
+        }
+        .row-1 img{
+            height: calc((100% - 5px)/2);
+        }
+        .forth{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+               <div class="banner"><img src="./images/A.jpg" alt=""></div>
+               <div class="banner">
+                <div><img src="./images/B.jpg" alt=""></div>
+                <div><img src="./images/C.jpg" alt=""></div>
+                <div class="row-1">
+                    <img src="./images/D.jpg" alt="">
+                    <img src="./images/E.jpg" alt="">
+                </div>
+               </div>
+               <div class="banner">
+                <div><img src="./images/F.jpg" alt=""></div>
+                <div class="forth">
+                    <img src="./images/G.jpg" alt="">
+                    <img src="./images/G.jpg" alt="">
+                    <img src="./images/G.jpg" alt="">
+                    <img src="./images/G.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./images/H.jpg" alt="">
+                </div>
+               </div>
+
+        </section>
+        
+    </main>
+    
+</body>
+</html>
